@@ -8,9 +8,9 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    <Route path="/" element={UserList} />
-                    <Route path="add" element={AddUser} />
-                    <Route path="edit/:id" element={EditUser} />
+                    <Route path="/" element={<UserList />} />
+                    <Route path="add" element={<AddUser />} />
+                    <Route path="edit/:id" element={<EditUser />} />
                 </Routes>
             </div>
         </BrowserRouter>
