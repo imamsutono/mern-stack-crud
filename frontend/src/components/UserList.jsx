@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
 const UserList = () => {
-    const [user, setUser] = useState([]);
+    const [users, setUser] = useState([]);
 
     useEffect(() => {
         getUsers();
@@ -26,7 +26,7 @@ const UserList = () => {
 
     return (
         <div className="columns mt-5">
-            <div className="column is-half">
+            <div className="column is-three-quarters">
                 <Link to="add" className="button is-success">Add New</Link>
 
                 <table className="table is-striped is-fullwidth mt-2">
